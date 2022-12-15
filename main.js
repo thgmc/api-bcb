@@ -21,8 +21,8 @@ function criaLinha(bcdata){
 }
 
 function main(){
-    ret = fazGet('https://api.bcb.gov.br/dados/serie/bcdata.sgs.12/dados/ultimos/10?formato=json')
-    let dados = JSON.parse(ret)
+    let data = fazGet('https://api.bcb.gov.br/dados/serie/bcdata.sgs.12/dados/ultimos/10?formato=json')
+    let dados = JSON.parse(data)
     let tabela = document.getElementById('tabela')
 
     dados.forEach(element => {
